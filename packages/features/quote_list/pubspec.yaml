@@ -1,0 +1,41 @@
+name: quote_list
+publish_to: none
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter_localizations:
+    sdk: flutter
+  #intl: ^0.18.1
+  component_library:
+    path: ../../component_library
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.2
+  bloc_concurrency: ^0.2.1
+  flutter:
+    sdk: flutter
+  domain_models:
+    path: ../../domain_models
+  quote_repository:
+    path: ../../quote_repository
+  user_repository:
+    path: ../../user_repository
+  monitoring:
+    path: ../../monitoring
+  infinite_scroll_pagination: ^4.0.0-dev.1
+  rxdart: ^0.27.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mocktail: ^0.3.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
