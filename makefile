@@ -35,17 +35,17 @@ get:
 	done
 
 upgrade:
-	flutter pub upgrade
+	flutter pub upgrade --major-versions
 	for feature in $(FEATURES); do \
 		cd $${feature} ; \
 		echo "Updating dependencies on $${feature}" ; \
-		flutter pub upgrade ; \
+		flutter pub upgrade --major-versions ; \
 		cd ../../../ ; \
 	done
 	for package in $(PACKAGES); do \
 		cd $${package} ; \
 		echo "Updating dependencies on $${package}" ; \
-		flutter pub upgrade ; \
+		flutter pub upgrade --major-versions ; \
 		cd ../../ ; \
 	done
 
