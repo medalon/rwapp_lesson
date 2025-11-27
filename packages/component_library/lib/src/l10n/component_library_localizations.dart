@@ -8,14 +8,16 @@ import 'package:intl/intl.dart' as intl;
 import 'component_library_localizations_en.dart';
 import 'component_library_localizations_pt.dart';
 
-/// Callers can lookup localized strings with an instance of ComponentLibraryLocalizations returned
-/// by `ComponentLibraryLocalizations.of(context)`.
+// ignore_for_file: type=lint
+
+/// Callers can lookup localized strings with an instance of ComponentLibraryLocalizations
+/// returned by `ComponentLibraryLocalizations.of(context)`.
 ///
 /// Applications need to include `ComponentLibraryLocalizations.delegate()` in their app's
-/// localizationDelegates list, and the locales they support in the app's
-/// supportedLocales list. For example:
+/// `localizationDelegates` list, and the locales they support in the app's
+/// `supportedLocales` list. For example:
 ///
-/// ```
+/// ```dart
 /// import 'l10n/component_library_localizations.dart';
 ///
 /// return MaterialApp(
@@ -30,14 +32,14 @@ import 'component_library_localizations_pt.dart';
 /// Please make sure to update your pubspec.yaml to include the following
 /// packages:
 ///
-/// ```
+/// ```yaml
 /// dependencies:
 ///   # Internationalization support.
 ///   flutter_localizations:
 ///     sdk: flutter
 ///   intl: any # Use the pinned version from flutter_localizations
 ///
-///   # rest of dependencies
+///   # Rest of dependencies
 /// ```
 ///
 /// ## iOS Applications

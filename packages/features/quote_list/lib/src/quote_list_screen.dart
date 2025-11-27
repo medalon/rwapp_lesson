@@ -197,7 +197,7 @@ class _QuoteListViewState extends State<QuoteListView> {
 extension on QuoteListState {
   PagingState<int, Quote> toPagingState() {
     return PagingState(
-      itemList: itemList,
+      pages: itemList,
       nextPageKey: nextPage,
       error: error,
     );

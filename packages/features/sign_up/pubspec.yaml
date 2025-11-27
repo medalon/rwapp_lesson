@@ -14,7 +14,7 @@ dependencies:
     path: ../../component_library
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.2
+  flutter_bloc: ^9.1.1
   user_repository:
     path: ../../user_repository
   form_fields:
@@ -25,7 +25,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   mocktail: ^1.0.4
 
 
